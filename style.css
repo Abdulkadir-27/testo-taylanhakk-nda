@@ -1,0 +1,139 @@
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: gold;
+  overflow-x: hidden;
+  background-color: #000;
+}
+
+video.bg-video {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px 30px 20px;
+  font-size: 3.2rem;
+  color: #FFD700;
+  text-shadow: 0 0 20px gold;
+}
+
+section.hayal {
+  max-width: 800px;
+  margin: 30px auto;
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 0 30px gold;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 2.2;
+}
+
+.money-symbol {
+  font-size: 2rem;
+  animation: glow 2s infinite alternate;
+  color: #00ff88;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #00ff88; }
+  to { text-shadow: 0 0 30px #00ffaa; }
+}
+
+section.vitrin {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 60px auto;
+  max-width: 1100px;
+}
+
+section.vitrin img {
+  width: 160px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px gold;
+  transition: transform 0.4s ease;
+}
+
+section.vitrin img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px gold;
+}
+
+footer {
+  text-align: center;
+  margin: 60px 0 40px;
+  color: #ffd700aa;
+  font-size: 1.1rem;
+  text-shadow: 0 0 10px #ffaa00aa;
+}
+
+button {
+  display: block;
+  margin: 30px auto;
+  padding: 16px 40px;
+  font-size: 1.2rem;
+  background: gold;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 0 0 20px gold;
+}
+
+button:hover {
+  background: #ffaa00;
+}
+a{
+    color: gold;
+}
+.hayal-box {
+  max-width: 800px;
+  margin: 30px auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 0 30px gold;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px gold;
+  max-width: 600px;
+  margin: 40px auto;
+  color: gold;
+  font-size: 1.1rem;
+}
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+}
+input[type="submit"] {
+  background: gold;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+input[type="submit"]:hover {
+  background: #ffaa00;
+}
